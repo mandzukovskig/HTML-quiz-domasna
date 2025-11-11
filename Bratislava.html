@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>City Explorer: Bratislava</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    margin: 0;
+    color: #333;
+}
+header {
+    background: #005fa3;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+header h1 {
+    margin-bottom: 10px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+section {
+    padding: 40px 20px;
+}
+.hero {
+    background-image: url('https://www.onesavvywanderer.com/wp-content/uploads/2019/09/Is-Bratislava-Worth-Visiting.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    border-bottom: 5px solid #005fa3;
+}
+.hero h2 {
+    background: rgba(0,0,0,0.5);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.photo {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+}
+.photo img {
+    width: 100%;
+    border-radius: 8px;
+}
+.photo button {
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.blog {
+    background: white;
+    border-radius: 8px;
+    max-width: 700px;
+    margin: auto;
+    padding: 25px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.blog ol li {
+    margin-bottom: 10px;
+}
+form {
+    background: white;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: auto;
+    padding: 25px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+input, textarea, button {
+    margin-top: 10px;
+}
+button {
+    background: #005fa3;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+footer {
+    background: #005fa3;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>City Explorer: Bratislava</h1>
+    <nav>
+        <a href="#home">Почетна</a>
+        <a href="#gallery">Галерија</a>
+        <a href="#blog">Водич</a>
+        <a href="#survey">Анкета</a>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <h2>Добредојдовте во Братислава</h2>
+    <p>Истражи го срцето на Словачка – град на Дунав со фасцинантна историја, модерна архитектура и вкусна кујна.</p>
+</section>
+
+<section id="gallery">
+    <h2 style="text-align:center;"> Галерија од Братислава</h2>
+    <div class="gallery">
+        <div class="photo">
+            <img src="https://lh3.googleusercontent.com/proxy/0t5SVzXqCW1jmv8GxsxITK47alyTZB4n44GMoJDETgPMOfIlqdUkqR-ceyYUYt2ibXSVNznK8iFGDI8MjX6yjK9mJni35CPE4y-WDBmYZSY62Bq7YbKjfmGzJlox44pdaTeu" alt="Bratislava Castle">
+            <p><b>Bratislava Castle</b></p>
+            <button class="like">👍</button>
+            <button class="dislike">👎</button>
+            <p class="count">Likes: 0 | Dislikes: 0</p>
+        </div>
+        <div class="photo">
+            <img src="https://api.hladamchatu.sk/__image__/local/thumb_mw/most-snp__6350_v0.jpg" alt="UFO Bridge">
+            <p><b>UFO Bridge (Most SNP)</b></p>
+            <button class="like">👍</button>
+            <button class="dislike">👎</button>
+            <p class="count">Likes: 0 | Dislikes: 0</p>
+        </div>
+        <div class="photo">
+            <img src="https://images.squarespace-cdn.com/content/v1/5c705ecb51f4d4c18997db3f/1552966466726-ZF0H2PSBGMBWEGZ8LANL/IMG_6842.jpeg" alt="Blue Church">
+            <p><b>Сината Црква</b></p>
+            <button class="like">👍</button>
+            <button class="dislike">👎</button>
+            <p class="count">Likes: 0 | Dislikes: 0</p>
+        </div>
+        <div class="photo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbhG4RHMkNmThphqaB-W8FKNso7brjioNv4Q&s" alt="Old Town">
+            <p><b>Стариот град (Old Town)</b></p>
+            <button class="like">👍</button>
+            <button class="dislike">👎</button>
+            <p class="count">Likes: 0 | Dislikes: 0</p>
+        </div>
+    </div>
+</section>
+
+<section id="blog">
+    <h2 style="text-align:center;"> 10 работи што мора да ги видите во Братислава</h2>
+    <div class="blog">
+        <ol>
+            <li>Замокот на Братислава – симболот на градот со панорама над Дунав.</li>
+            <li>UFO Observation Deck – модерна платформа со поглед на целиот град.</li>
+            <li>Стариот град (Old Town) – калдрмисани улички и шармантни кафулиња.</li>
+            <li>St. Martin’s Cathedral – готска катедрала со богата историја.</li>
+            <li>Devín Castle – античка тврдина на раскрсницата на Дунав и Моравa.</li>
+            <li>Сината Црква – една од најуникатните цркви во Европа.</li>
+            <li>Čumil – мала бронзена статуа на човек кој излегува од шахта на улицата..</li>
+            <li>Primatial Palace – место каде биле потпишувани значајни договори.</li>
+            <li>Michael's Gate – последната зачувана средновековна градска порта која датира од 14 век.</li>
+            <li>Hviezdoslav Square – живописен плоштад полн со живот.</li>
+        </ol>
+    </div>
+</section>
+
+<section id="survey">
+    <h2 style="text-align:center;"> Анкета за посетителите</h2>
+    <form onsubmit="alert('Ви благодариме за вашето мислење!'); return false;">
+        <label>Каков е вашиот впечаток од сајтот?</label><br>
+        <input type="radio" name="impression" value="odlichen"> Одличен<br>
+        <input type="radio" name="impression" value="dobar"> Добар<br>
+        <input type="radio" name="impression" value="prosechen"> Просечен<br><br>
+
+        <label>Што ви се допадна најмногу?</label><br>
+        <input type="checkbox" name="fav" value="gallery"> Галерија<br>
+        <input type="checkbox" name="fav" value="blog"> Водич<br>
+        <input type="checkbox" name="fav" value="design"> Дизајн<br><br><br>
+
+        <label>Ваш коментар:</label><br>
+        <textarea rows="4" cols="40" placeholder="Ваше мислење..."></textarea><br>
+
+        <button type="submit">Испрати</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2025 City Explorer: Bratislava | Проектна задача</p>
+</footer>
+
+<script>
+document.querySelectorAll('.photo').forEach(photo => {
+    const likeBtn = photo.querySelector('.like');
+    const dislikeBtn = photo.querySelector('.dislike');
+    const countText = photo.querySelector('.count');
+    let likes = 0, dislikes = 0;
+
+    likeBtn.addEventListener('click', () => {
+        likes++;
+        countText.textContent = `Likes: ${likes} | Dislikes: ${dislikes}`;
+    });
+
+    dislikeBtn.addEventListener('click', () => {
+        dislikes++;
+        countText.textContent = `Likes: ${likes} | Dislikes: ${dislikes}`;
+    });
+});
+</script>
+
+</body>
+</html>
