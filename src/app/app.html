@@ -1,0 +1,24 @@
+<h2>🧩 Memory Game – Овошје</h2>
+
+<table class="game-table">
+  <tr *ngFor="let row of [0,1,2]">
+    <td
+      *ngFor="let col of [0,1,2,3]"
+      class="card-cell"
+      (click)="flipCard(cards[row * 4 + col])"
+    >
+      <span class="emoji">
+        {{
+          cards[row * 4 + col]?.flipped ||
+          cards[row * 4 + col]?.matched
+            ? cards[row * 4 + col]?.front
+            : back
+        }}
+      </span>
+    </td>
+  </tr>
+</table>
+
+<p>🔄 Обиди: <strong>{{ obidi }}</strong></p>
+
+<button (click)="restartGame()">🔁 Рестарт</button>
